@@ -1326,3 +1326,63 @@ section {
     font-family: inherit; /* Kế thừa đúng font chữ của con số */
     font-size: 1em;       /* Bằng đúng kích thước của số */
 }
+
+/* Style cho lưới logo mới */
+.clients-grid {
+    padding: 60px 0;
+    background: #f8fbfe; /* Màu nền nhẹ để tôn khối nổi lên */
+}
+
+.clients-grid .row {
+    /* Loại bỏ khoảng cách mặc định của bootstrap nếu cần thiết */
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.clients-grid [class*="col-"] {
+    padding: 10px; /* Tạo khoảng cách giữa các ô */
+}
+
+/* Thiết kế ô logo như một nút bấm nổi */
+.client-logo-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Chiều cao cố định cho các ô đồng nhất */
+    transition: all 0.3s ease-in-out;
+    
+    /* Hiệu ứng nổi vừa phải như hình mô tả */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+.client-logo-card:hover {
+    transform: translateY(-5px); /* Hiệu ứng nhấc nhẹ khi di chuột vào */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Xử lý hình ảnh logo bên trong */
+.client-logo-card img {
+    max-width: 100%;
+    max-height: 100%;
+    
+    /* Căn chỉnh chế độ Contain */
+    object-fit: contain;
+    
+    /* Điều chỉnh Độ tương phản và Độ sáng theo yêu cầu (1.15) */
+    filter: contrast(1.15) brightness(1.15);
+    
+    /* Đảm bảo ảnh hiển thị trung thực */
+    transition: all 0.3s;
+}
+
+/* Responsive cho màn hình di động */
+@media (max-width: 991px) {
+    .client-logo-card {
+        height: 80px;
+        padding: 15px;
+    }
+}
