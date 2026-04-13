@@ -637,6 +637,15 @@ section {
   line-height: 24px;
   margin-bottom: 0;
 }
+/* Ép các box dịch vụ có chiều cao bằng nhau */
+.services .row > div {
+    display: flex; /* Biến cột thành flex container */
+}
+
+.services .icon-box {
+    width: 100%; /* Chiếm trọn chiều rộng */
+    height: 100%; /* Chiếm trọn chiều cao của cột */
+}
 
 /*--------------------------------------------------------------
 # Portfolio
