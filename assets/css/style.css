@@ -1367,13 +1367,13 @@ section {
 /* Xử lý hình ảnh logo bên trong */
 .client-logo-card img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 140%;
     
     /* Căn chỉnh chế độ Contain */
     object-fit: contain;
     
     /* Điều chỉnh Độ tương phản và Độ sáng theo yêu cầu (1.15) */
-    filter: contrast(1.15) brightness(1.15);
+    filter: contrast(1.0) brightness(1.05);
     
     /* Đảm bảo ảnh hiển thị trung thực */
     transition: all 0.3s;
