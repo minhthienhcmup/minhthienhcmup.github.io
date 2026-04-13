@@ -1320,3 +1320,9 @@ section {
     text-align: center;
   }
 }
+/* Thêm dấu + vào sau tất cả các số chạy PureCounter */
+.counts .purecounter::after {
+    content: "+";
+    font-family: inherit; /* Kế thừa đúng font chữ của con số */
+    font-size: 1em;       /* Bằng đúng kích thước của số */
+}
